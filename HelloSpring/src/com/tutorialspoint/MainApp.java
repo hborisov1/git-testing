@@ -8,6 +8,8 @@ public class MainApp {
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 		HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
+//		int i = 0;
+//		for(;i==15;i++)
 		System.out.println(obj.getMessage());
 	}
 
